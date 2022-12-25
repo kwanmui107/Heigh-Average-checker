@@ -1,0 +1,19 @@
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this row 👇
+# create a accumulator for sum by starting it at 0
+sum = 0;
+# create a count by starting a count at 0
+count = 0;
+for total_height in student_heights:
+    # in order to accumulate we must use += on the for loop variable  with our list
+    sum += total_height
+    #each time we iterate over this, we will add one to the counter to track the amount of time we did this. 
+    count = count +1
+print (round(sum/count))
